@@ -1,0 +1,12 @@
+<html>
+<head>
+  <h1>Currency Pairs</h1>
+</head>
+<body>
+  <ul>
+    <% @symbols.each do |currency, name| %>
+      <li><strong><%= currency %></strong>: <%= name %></li>
+    <% end %>
+  </ul>
+</body>
+</html>
