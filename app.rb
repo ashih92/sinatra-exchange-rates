@@ -33,11 +33,11 @@ get("/:from_currency") do
 
   api_url = "https://api.exchangerate.host/list?access_key=#{ENV["fa37e94f30043729bbef4e8a0bb21d65"]}"
   
-raw_data = HTTP.get(api_url)
+  raw_data = HTTP.get(api_url)
 
-raw_data_string = raw_data.to_s
+  raw_data_string = raw_data.to_s
 
-parsed_data = JSON.parse(raw_data_string)
+  parsed_data = JSON.parse(raw_data_string)
 
 
 
